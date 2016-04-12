@@ -16,12 +16,17 @@
               </block>
             </value>
             <next>
-              <block type="oled_drawnumber" id="192" inline="true">
-                <value name="NUMBER">
-                  <block type="sensor_spectrometer" id="137">
-                    <field name="LIGHT">BLUE</field>
+              <block type="oled_drawtext" id="233">
+                <field name="TEXT">Blue =</field>
+                <next>
+                  <block type="oled_drawnumber" id="192" inline="true">
+                    <value name="NUMBER">
+                      <block type="sensor_spectrometer" id="137">
+                        <field name="LIGHT">BLUE</field>
+                      </block>
+                    </value>
                   </block>
-                </value>
+                </next>
               </block>
             </next>
           </block>
